@@ -1,6 +1,6 @@
 #!/usr/bin/env pyh
 
-class Search_Results:
+class Search_Results():
         def __init__(self, user, language, body_text, site):
             self.user = user
             self.body_text = body_text

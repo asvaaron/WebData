@@ -4,7 +4,7 @@ from tweepy import OAuthHandler
 import twitterstream
 
 
-class Search:
+class Search():
 
     def __init__(self):
         auth = OAuthHandler(twitterstream.consumer_key, twitterstream.consumer_secret)
@@ -13,6 +13,7 @@ class Search:
         # entry point for most of the Twitter operations .
         if (not self.api):
             print ("Can't Authenticate")
+            # Call exceptions
 
 
 

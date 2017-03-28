@@ -1,5 +1,4 @@
 #!/usr/bin/env pyh
-
 import Search
 
 if __name__ == "__main__":
