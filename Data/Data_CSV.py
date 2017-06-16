@@ -4,7 +4,7 @@ import csv
 class CSV_Manager():
     def __init__(self, path):
         self.path = path
-        self.colnum = 0
+
 
     def set_path(self, path):
         self.path = path
@@ -12,8 +12,7 @@ class CSV_Manager():
     def get_path(self):
         return self.path
 
-    def set_colnum(self, colnum):
-        self.colnum = colnum
+
 
     def csv_writer(self, data):
         with open(self.path, "wb") as csv_file:
@@ -26,3 +25,6 @@ class CSV_Manager():
             writer = csv.writer(csv_file, delimiter=';')
             for line in data:
                 writer.writerow(line)
+
+
+
